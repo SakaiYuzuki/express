@@ -15,4 +15,8 @@ res.json(data);
 }
 });
 })
+<<<<<<< HEAD
 module.exports = router;
+=======
+module.exports = router;
+>>>>>>> 526dd8e58ac7d4954377c2b8492093c8a55a7195
