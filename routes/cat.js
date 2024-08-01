@@ -7,16 +7,12 @@ const cors = require('cors'); //ミドルウェアを追加
 router.use(cors());
 
 router.get('/', async (req, res) => {
-request('https://api.thecatapi.com/v1/images/search', function (error, response,
-body) {
+request('https://api.thecatapi.com/v1/images/search', function (error, response,　body) {
 if (!error && response.statusCode == 200) {
 const data = JSON.parse(body);
 res.json(data);
 }
 });
 })
-<<<<<<< HEAD
+
 module.exports = router;
-=======
-module.exports = router;
->>>>>>> 526dd8e58ac7d4954377c2b8492093c8a55a7195
